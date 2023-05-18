@@ -1,3 +1,4 @@
+import 'package:darscha/screens/enter_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -20,14 +21,19 @@ class Home extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {
-                print("bosildi");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Enterscreen(),
+                  ),
+                );
               },
               child: const Text(
                 "AO BACK",
                 style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,color: Colors.white
-                ),
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
             ),
           ],

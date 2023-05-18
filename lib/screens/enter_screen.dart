@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:darscha/screens/get_startted.dart';
 import 'package:darscha/widgets/next_button.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -81,7 +82,15 @@ class Enterscreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const NextButton()
+                  GestureDetector(
+                    onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const GetStart(),
+                      ),
+                    ),
+                    child: const NextButton(),
+                  )
                 ],
               ),
             ],

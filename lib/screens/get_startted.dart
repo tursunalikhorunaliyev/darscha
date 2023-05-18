@@ -112,7 +112,7 @@ class GetStart extends StatelessWidget {
             Text(
               "Forget password ?",
               style: GoogleFonts.montserrat(
-                fontSize: 10,
+                fontSize: 12,
               ),
             ),
             const Spacer(),
