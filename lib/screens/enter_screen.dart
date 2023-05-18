@@ -25,9 +25,7 @@ class Enterscreen extends StatelessWidget {
                 width: 321,
                 height: 251,
               ),
-              const SizedBox(
-                height: 168,
-              ),
+              const Spacer(),
               Text(
                 "Explore the\nworld easily",
                 style: GoogleFonts.montserrat(
@@ -92,6 +90,9 @@ class Enterscreen extends StatelessWidget {
                     child: const NextButton(),
                   )
                 ],
+              ),
+              const SizedBox(
+                height: 72,
               ),
             ],
           ),
