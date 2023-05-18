@@ -115,9 +115,7 @@ class GetStart extends StatelessWidget {
                 fontSize: 10,
               ),
             ),
-            const SizedBox(
-              height: 86,
-            ),
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -182,7 +180,10 @@ class GetStart extends StatelessWidget {
                   ),
                 ),
               ],
-            )
+            ),
+            const SizedBox(
+              height: 36,
+            ),
           ],
         ),
       ),
