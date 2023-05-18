@@ -1,7 +1,6 @@
 import 'package:darscha/widgets/custom_textfield.dart';
+import 'package:darscha/widgets/next_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class GetStart extends StatelessWidget {
@@ -116,10 +115,25 @@ class GetStart extends StatelessWidget {
                 fontSize: 10,
               ),
             ),
+            const SizedBox(
+              height: 86,
+            ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
                   children: [
+                    Container(
+                      height: 6,
+                      width: 13,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFFC33E),
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 2,
+                    ),
                     Container(
                       height: 6,
                       width: 16,
@@ -128,8 +142,45 @@ class GetStart extends StatelessWidget {
                         borderRadius: BorderRadius.circular(5),
                       ),
                     ),
+                    const SizedBox(
+                      width: 2,
+                    ),
+                    Container(
+                      height: 6,
+                      width: 13,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFFFC33E),
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                    ),
                   ],
-                )
+                ),
+                const NextButton()
+              ],
+            ),
+            const SizedBox(
+              height: 21,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Already a member?",
+                  style: GoogleFonts.montserrat(
+                    fontSize: 13,
+                  ),
+                ),
+                const SizedBox(
+                  width: 4,
+                ),
+                Text(
+                  "Log In",
+                  style: GoogleFonts.montserrat(
+                    fontSize: 13,
+                    color: const Color(0xFFFFC33E),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ],
             )
           ],
