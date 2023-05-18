@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:darscha/widgets/next_button.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Enterscreen extends StatelessWidget {
   const Enterscreen({super.key});
@@ -24,16 +27,16 @@ class Enterscreen extends StatelessWidget {
               const SizedBox(
                 height: 168,
               ),
-              const Text(
+              Text(
                 "Explore the\nworld easily",
-                style: TextStyle(
+                style: GoogleFonts.montserrat(
                   fontSize: 36,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const Text(
+              Text(
                 "To your desire",
-                style: TextStyle(
+                style: GoogleFonts.montserrat(
                   fontSize: 24,
                   fontWeight: FontWeight.w300,
                 ),
@@ -54,25 +57,31 @@ class Enterscreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(5),
                         ),
                       ),
-                      Container(
-                        height: 6,
-                        width: 13,
-                        decoration: BoxDecoration(
-                          color: Colors.yellow,
-                          borderRadius: BorderRadius.circular(5),
-                        ),
+                      const SizedBox(
+                        width: 2,
                       ),
                       Container(
                         height: 6,
                         width: 13,
                         decoration: BoxDecoration(
-                          color: Colors.yellow,
+                          color: const Color(0xFFFFC33E),
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 2,
+                      ),
+                      Container(
+                        height: 6,
+                        width: 13,
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFFFC33E),
                           borderRadius: BorderRadius.circular(5),
                         ),
                       ),
                     ],
                   ),
-                  NextButton()
+                  const NextButton()
                 ],
               ),
             ],
